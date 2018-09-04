@@ -1,0 +1,337 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>somewhere far away</title>
+<!--CSS Style-->
+<style type="text/css">
+html{
+    width: 1280px;
+    font-family: courier, serif; 
+    }
+    
+    body{
+    width: 1280px;
+    height: 18000px;
+     background: linear-gradient(black, #001719, #15206d, #52277c);
+    background-size: contain;
+      background-repeat: no-repeat;}
+.scene1{
+    width: 100%;
+    height: 700px;
+    top:0;
+    left:0;
+    margin-left: -10px;
+    border-radius: 0 0 100% 100%;
+    border-bottom: 2px dashed gray; 
+    }
+.location h2 {
+    font-family: Courier, serif;
+    font-weight: 100;
+    color: white;
+    font-size: 0.7em;
+    letter-spacing: 0.1em;
+    }
+
+#slowdown{
+    z-index: 1;
+    color:aquamarine;
+    margin-top: 1700px;
+    margin-left: 130px;
+    position: absolute;
+        
+    }
+/*Plants background styling*/
+.bg-planets #peachplanet {
+    position: absolute;
+    width: 75px;
+    left: 140px;
+    top: 120px;
+}   
+#planet2 {
+    position: absolute;
+    width: 50px;
+    left: 1000px;
+    top: 500px;
+    
+    }
+.noplanet3 {
+    position: absolute;
+    top: 3500px;
+    left: 150px;
+    display:block;
+    z-index: 2;
+}
+.noplanet3 img:hover{
+    cursor: help 
+    }
+.noplanet3:active img{
+    visibility:hidden;
+    position:absolute;
+    text-decoration: none;
+    
+        
+    }
+#moon1 {
+    position: absolute;
+    top: 3460px;
+    left: 80px;  
+}   
+#moon1 img:hover{
+    cursor: text    
+    }
+#planet4{
+    position: absolute;
+    top: 5400px;
+    left: 100px; 
+    width: 260px
+}
+
+#planet5{
+    position: absolute;  
+    top: 5300px;
+    left: 880px; 
+    width: 200px;
+    z-index: 1
+    }
+#planet6{
+    position: absolute;  
+    top: 13800px;
+    left: 900px;
+    width: 260px
+        
+    }
+
+.location h1{
+    font-weight: 100;
+    color: white;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    margin:0;
+    padding:0;
+}
+.scene .mainCharacter img {
+    position: fixed;
+    top: 310px;
+    left: 630px;
+    margin: -100px 0 0 -150px; 
+    }
+    
+.textbox {
+    color: aquamarine;
+    font-weight: 100;
+    width: 310px;
+    height:90px ;
+    margin-top: 210px;
+    margin-left: 750px;
+    z-index: -1;
+    position: absolute;
+    line-height: 10px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 14px;
+    padding-bottom: 14px;   
+}
+.textbox {
+    border: dashed 2px;
+    background-color: black;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+/* Typewriter effect styles*/
+.textbox p{
+white-space: nowrap;
+  overflow: hidden;
+  width: 20em;
+  animation: type 2s steps(60, end); 
+}
+p:nth-child(2){
+  animation: type2 4s steps(60, end);
+}
+p:nth-child(3){
+  animation: type2 15s steps(60, end);
+}
+span{
+  animation: blink 1s infinite;
+}
+@keyframes type{ 
+  from { width: 0; } 
+} 
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100%; } 
+} 
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+.comment1 h3{
+    position: absolute; 
+    color: aquamarine; 
+    top: 3420px; 
+    left: 786px; 
+    z-index: 1;}
+.comment2{
+    position: absolute; 
+    color: aquamarine; 
+    top: 3700px; 
+    left: 100px; 
+    z-index: 1;
+    }
+ .comment4{
+    position: absolute; 
+    color: aquamarine;
+     top: 11985px;
+    }
+.comment3, .endingcomment, .comment4{
+    font-size:16px;
+    position: absolute; 
+    color: aquamarine; 
+    }
+h3{font-size: 1em; font-weight: 100}
+
+.endingcomment{
+    color: aquamarine;
+    font-weight: 100;
+    width: 350px;
+    height:90px ;
+    z-index: -1;
+    position: absolute;
+    line-height: 30px;
+    padding: 14px;
+    margin: -400px 470px 0;
+    border: dashed 2px;
+    background-color: black;
+    z-index: 4;
+    opacity: 0.8;
+    }
+.mainCharacter img{
+    width: 250px;
+    z-index: -1
+    }
+#planetbg{
+    position: absolute; top: 1200px
+    }
+#planetbg2{
+    position: absolute; top: 2980px; left: 200px; width: 40px}
+#constellation1{
+    position: absolute; top:2230px; left: 100px;}
+.comment1 img{
+    margin-top:2650px; margin-left: 710px; width: 200px; }
+a{
+    color: aquamarine;
+    font-size: 1.2em
+    }  
+a:hover{
+    font-size: 1.3em;
+    } 
+.endbg img:hover{
+    cursor: help;
+    }
+    
+</style> 
+</head>
+    
+<!-- Body-->
+<body>
+<!-- Scene 1-->
+    <div class="scene">
+<!-- Background plants images-->
+        <div class="bg-planets">
+            <img id="peachplanet" src="img/peachplanet.png" alt="peachplanet">
+            <img id="planet2" src="img/planet2.png" alt="greentranspartentplanet">
+            <div class="noplanet3">    
+                <img id="planet3" src="img/meanplanet1.png" alt="meanplanet1">
+            </div>
+            <a href="https://exoplanets.nasa.gov/alien-worlds/strange-new-worlds/"><img id="moon1" src="img/moon1.png" alt="meanplanet1moon"></a>
+            <!--<img id="planet4" src="img/meanplanet3.png" alt="meanplanet4">
+                <img id="moon3" src="img/moon3.png" alt="meanplanet4moon">-->
+            <a href="page3.html"><img id="planet5" src="img/meanplanet2.png" alt="meanplanet5"></a>
+                <!--<img id="moon2" src="img/moon2.png" alt="meanplanet5moon">-->
+            <a href="https://exoplanets.nasa.gov/alien-worlds/galaxy-of-horrors/"><img id="planet6" src="img/meanplanet4.png" alt="meanplanet6"></a>
+        </div>
+        
+        <div class="location">
+            <h1>EXOUVERSE-02</h1>
+            <h2>View page in 1200x800px</h2>
+        </div>
+        <div class="mainCharacter">
+            <img src="img/pink.png" alt="main pink planet;">
+        </div>
+<!--Typewriter textbox-->    
+    <div class="textbox">
+            <div class="typing">
+            <p>Ready for an adventure out in</p>
+            <p>the universe? Let's go!<span>|</span></p>
+            </div>
+        </div>
+        <!--first scene background-->
+        <div class="scene1"></div>
+        <div class="planets1">
+            <img id="planetbg" src="img/planetsbg.png" alt="plants background"> 
+            <img id="planetbg2" src="img/planet2.png" alt="plants background"> 
+            <img id="constellation1" src="img/constellation1.png" alt="constellation">
+        </div>
+        <div class="stars1">
+            <img id="stars1" src="img/stars1.png" style="z-index:-3; position: absolute;" alt="stars background">
+            <img id="stars2" src="img/stars1.png" style="z-index:-3; position: absolute; top: 1400px" alt="stars background"> 
+            <img id="stars3" src="img/stars1.png" style="z-index:-3; position: absolute; top: 2300px" alt="stars background"> 
+            <img id="stars4" src="img/stars3.png" style="z-index:-3; position: absolute; top: 3100px" alt="stars background"> 
+            <img id="stars5" src="img/stars3.png" style="z-index:-3; position: absolute; top: 3900px" alt="stars background">
+            <img id="stars6" src="img/stars3.png" style="z-index:-3; position: absolute; top: 4600px" alt="stars background">
+            <img id="stars7" src="img/stars3.png" style="z-index:-3; position: absolute; top: 5400px" alt="stars background">
+            <img id="stars8" src="img/stars3.png" style="z-index:-3; position: absolute; top: 5900px" alt="stars background">
+            <img id="stars9" src="img/stars3.png" style="z-index:-3; position: absolute; top: 6700px" alt="stars background">
+            <img id="stars10" src="img/stars3.png" style="z-index:-3; position: absolute; top: 7600px" alt="stars background">
+            <img id="stars11" src="img/stars3.png" style="z-index:-3; position: absolute; top: 8210px" alt="stars background">
+        </div>
+    </div>
+<!-- Text Commentary-->
+    <div class="comment1">
+        <p id="slowdown">Hey! Slow down! Don't miss <br>out on anything you see!!!</p>
+        <img src="img/boxsmall.png" alt="small text box">
+        <div class="comment1">
+            <h3>hey!! i-</h3>
+            </div>
+    </div>
+    <div class="comment2">
+        <a href="index.html" style="color: aquamarine"><h3 style="margin-left: 200px; margin-top: -210px;">..??@@##</h3></a>
+    </div>
+    <div class="comment3">
+        <h3 style="margin-left: 860px; margin-top: 2050px;">sdkk2@@ kek3 <a href="page3.html">another world</a></h3>
+    </div>
+    <div class="comment4">
+        <h3 style="margin-left: 990px; margin-top: 2050px; position: absolute"><a href="https://exoplanets.nasa.gov/alien-worlds/galaxy-of-horrors/">------>>></a></h3>
+    </div>
+   
+<!-- constellations-->
+    <img src="img/constellations.png" alt="hercules" style="width: 230px; margin-top: 1400px; margin-left: 100px; position: absolute">
+    <img src="img/constellations3.png" alt="ursa minor" style="position: absolute; margin-top: 3300px; margin-left: 850px">
+
+<!-- darkness, lost-->
+    <div class="blackbg" style="margin-top: 5000px; padding:0; margin-left: 0">
+        <img src="img/blackness.png" alt="black background" style="z-index: 100; margin-left: -10px;"> 
+    </div>
+    <img id="stars12" src="img/stars3.png" style="z-index:-3; position: absolute; top: 12400px" alt="stars background">
+    <img id="stars13" src="img/stars3.png" style="z-index:-3; position: absolute; top: 13200px" alt="stars background">
+     <img id="stars14" src="img/stars3.png" style="z-index:-3; position: absolute; top: 13900px" alt="stars background">
+    <img id="stars15" src="img/stars3.png" style="z-index:-3; position: absolute; top: 14800px" alt="stars background">
+    
+    <div class="endbg">
+    <a href="page4.html"><img src="img/end.png" style="margin-top: 2500px; margin-left: -8px;" alt="black faded background"></a>
+    
+    </div>
+    
+    
+    
+<!-- Ending Text Commentary-->
+    <div class="endingcomment">
+        <h3>Weird places out here...Where do I <br> go next? where do i belong....</h3>
+    </div>
+    
+    
+    
+</body>
+</html>

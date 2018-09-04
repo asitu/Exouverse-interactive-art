@@ -1,0 +1,154 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>your universe</title>
+<!--CSS Style-->
+<style type="text/css">
+html{
+    width: 1280px;
+    height: 800px;
+    }
+    body {
+    width: 1280px;
+    height: 800px;
+    background: #4442C5; 
+    background: linear-gradient(#001719, #15206d, #52277c); 
+    background-repeat: no-repeat;
+}
+
+.scene .mainCharacter img {
+    position: absolute;
+    top: 310px;
+    left: 630px;
+    margin: -100px 0 0 -150px;    
+}
+.location{
+    z-index: 1;
+    position: absolute
+    }
+.location h1{
+    font-family: Courier, serif;
+    font-weight: 100;
+    color: white;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    z-index: 1
+}
+.location h2 {
+    font-family: Courier, serif;
+    font-weight: 100;
+    color: white;
+    font-size: 0.7em;
+    letter-spacing: 0.1em;
+    z-index: 1
+    }
+
+.scene img{
+   position: absolute;
+    width: 1280px;
+    height: auto
+}
+
+.textbox {
+    color: aquamarine;
+    font-family: Courier;
+    font-weight: 100;
+    width: 310px;
+    height:90px ;
+    margin-top: 210px;
+    margin-left: 840px;
+    z-index: -1;
+    position: absolute;
+    line-height: 10px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    
+}
+.textbox {
+    border: dashed 2px;
+    background-color: black;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+/* Typewriter effect styles*/
+
+.textbox p{
+    white-space: nowrap;
+  overflow: hidden;
+  width: 20em;
+  animation: type 2s steps(60, end); 
+}
+p:nth-child(2){
+  animation: type2 5s steps(60, end);
+}
+p:nth-child(3){
+  animation: type2 10s steps(60, end);
+}
+
+
+span{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100%; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+h2 a{
+    color: aquamarine;
+    z-index: 2;
+    }
+h2 a:hover{
+     cursor: pointer;
+    }
+.location a:hover{
+     font-size: 1.3em   
+    }
+</style>
+</head>
+    
+
+<!--Body-->
+<body>
+    <div class="scene">
+        
+        <div class="location">
+            <h1>EXOUVERSE-01</h1>
+            <h2>View page in 1200x800px</h2>
+            <h2><a href="statement.html">Statement</a></h2>
+        </div>
+        <img id="youruniversebg" src="img/bg.png" alt="background">
+        <div class="mainCharacter">
+            <a href="page2.html#"> <img src="img/pink.png" alt="main pink planet" style="width: 345px"></a>
+        </div>
+        <div class="textbox">
+            <div class="typing">
+            <p>Hello! I am SB 107b. It gets </p>
+            <p>lonely and boring here.. Let's</p>
+            <p> discover things in the universe!<span>|</span></p>
+            </div>
+        </div>
+        
+    
+    </div>
+    
+
+    
+    
+</body>
+</html>
+
